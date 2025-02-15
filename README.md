@@ -1,0 +1,26 @@
+- App for testing and learning [Material Components for Android](https://github.com/material-components/material-components-android)
+  - [editor](editor)
+    - https://m3.material.io/
+      - https://github.com/material-components/material-components-android
+      - https://github.com/material-components/material-components-android/tree/master/docs
+    - https://developer.android.com/develop/ui/views/theming/dynamic-colors
+    - https://developer.android.com/develop/ui/views/theming/darktheme
+    - https://developer.android.com/develop/ui/views/layout/edge-to-edge
+      - https://issuetracker.google.com/issues/326356902
+    - https://developer.android.com/topic/libraries/view-binding
+    - https://developer.android.com/training/data-storage/shared/documents-files
+    - https://developer.android.com/training/basics/intents/result
+    - https://developer.android.com/topic/libraries/architecture/viewmodel
+    - https://developer.android.com/training/data-storage/shared-preferences
+  - [editork](editork) (kotlin editor)
+  - [game](game)
+  - Plan
+    - [Contributions to Material Components for Android](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura) :red_square:
+      - https://github.com/manabu-nakamura/manabu-nakamura
+      - https://github.com/material-components/material-components-android/commits?author=manabu-nakamura
+    - [App for testing and learning Jetpack Compose](https://github.com/manabu-nakamura/appc) :red_square:
+    - add comments
+    - add documentation
+    - add new apps
+
+<img src="docs/s1.png" width="20%"><img src="docs/s2.png" width="20%"><img src="docs/s3.png" width="20%">

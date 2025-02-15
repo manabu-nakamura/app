@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Theme.App.2" />
+</resources>

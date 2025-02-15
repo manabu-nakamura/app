@@ -1,0 +1,9 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/theme"
+        android:onClick="theme" />
+    <item
+        android:title="@string/about"
+        android:onClick="about" />
+</menu>
