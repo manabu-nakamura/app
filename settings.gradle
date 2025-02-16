@@ -1,3 +1,4 @@
 include ':editor'
 include ':editork'
 include ':game'
+include ':counter'

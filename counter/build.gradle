@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.github.manabu_nakamura.counter'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    namespace 'com.github.manabu_nakamura.counter'
+}
+
+dependencies {
+    implementation 'com.google.android.material:material:1.12.0'
+//    implementation 'com.google.android.material:material:1.13.0-alpha10'
+}

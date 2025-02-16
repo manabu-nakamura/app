@@ -14,6 +14,8 @@
     - https://developer.android.com/training/data-storage/shared-preferences
   - [editork](editork) (kotlin editor)
   - [game](game)
+  - [counter](counter)
+    - https://developer.android.com/topic/libraries/architecture/livedata
   - Plan
     - [Contributions to Material Components for Android](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura) :red_square:
       - https://github.com/manabu-nakamura/manabu-nakamura
@@ -23,4 +25,4 @@
     - add documentation
     - add new apps
 
-<img src="docs/s1.png" width="20%"><img src="docs/s2.png" width="20%"><img src="docs/s3.png" width="20%">
+<img src="docs/s1.png" width="20%"><img src="docs/s2.png" width="20%"><img src="docs/s3.png" width="20%"><img src="docs/s4.png" width="20%">
