@@ -21,9 +21,9 @@
       - add comments
       - add documentation
       - add new apps
-  - [Contributions](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura) :red_square:
+  - [Contributions](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura) 🟥
     - https://github.com/manabu-nakamura/manabu-nakamura
 - [Jetpack Compose](https://developer.android.com/compose)
-  - [App](https://github.com/manabu-nakamura/appc) :red_square:
+  - [App](https://github.com/manabu-nakamura/appc) 🟥
 
 <img src="docs/s1.png" width="20%"><img src="docs/s2.png" width="20%"><img src="docs/s3.png" width="20%"><img src="docs/s4.png" width="20%">
