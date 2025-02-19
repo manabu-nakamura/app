@@ -20,10 +20,13 @@
     - Plan
       - add comments
       - add documentation
+        - [memo](wiki/memo)
       - add new apps
   - [Contributions](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura) 🟥
-    - https://github.com/manabu-nakamura/manabu-nakamura
 - [Jetpack Compose](https://developer.android.com/compose)
   - [App](https://github.com/manabu-nakamura/appc) 🟥
+  - [Contributions](https://github.com/android/compose-samples/issues?q=author%3Amanabu-nakamura) 🟥
 
 <img src="docs/s1.png" width="20%"><img src="docs/s2.png" width="20%"><img src="docs/s3.png" width="20%"><img src="docs/s4.png" width="20%">
+
+https://github.com/manabu-nakamura
