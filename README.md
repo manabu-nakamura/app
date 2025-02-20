@@ -29,4 +29,4 @@
 
 <img src="docs/s1.png" width="20%"><img src="docs/s2.png" width="20%"><img src="docs/s3.png" width="20%"><img src="docs/s4.png" width="20%">
 
-https://github.com/manabu-nakamura
+[Manabu Nakamura](https://github.com/manabu-nakamura)
