@@ -20,7 +20,7 @@
     - Plan
       - add comments
       - add documentation
-        - [memo](https://github.com/manabu-nakamura/app/wiki/memo)
+        - [memo](docs/memo.md)
       - add new apps
   - [Contributions](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura) 🟥
 - [Jetpack Compose](https://developer.android.com/compose)
