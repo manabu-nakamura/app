@@ -1,6 +1,8 @@
 > [!CAUTION]
-> The screenshots were taken on Android Emulator (Android 13).
+> Apps targeted Android 14 and ran on Android 15 (Android Emulator).
 >
+> https://github.com/material-components/material-components-android/issues/4293
+> 
 > https://issuetracker.google.com/issues/295296005
 >
 > https://developer.android.com/about/versions/15/behavior-changes-15
@@ -77,7 +79,7 @@ x->`<item name="android:navigationBarColor">@android:color/transparent</item>`
 
 https://github.com/material-components/material-components-android/blob/master/docs/components/BottomSheet.md#handling-insets-and-fullscreen
 
-- `android:windowLightNavigationBar`
+- `android:windowLightNavigationBar` (Android 13)
 ```xml
 <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
     <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
@@ -88,7 +90,7 @@ https://github.com/material-components/material-components-android/blob/master/d
     <item name="android:windowLightNavigationBar">?isLightTheme</item>
 </style>
 ```
-<img src="s8.png" width="20%">-><img src="s2.png" width="20%">
+<img src="s8.png" width="20%">-><img src="s12.png" width="20%">
 
 x->`<item name="android:windowLightNavigationBar">?isLightTheme</item>`
 
