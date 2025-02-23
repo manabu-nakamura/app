@@ -1,20 +1,20 @@
 > [!CAUTION]
-> Apps targeted Android 14 and ran on Android 15 (Android Emulator).
->
-> https://github.com/material-components/material-components-android/issues/4293
-> 
-> https://issuetracker.google.com/issues/295296005
+> The app <u>targeted Android 15</u> and <u>ran on Android 15</u> (Android Emulator).
 >
 > https://developer.android.com/about/versions/15/behavior-changes-15
 
-🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/java/com/github/manabu_nakamura/editor/MainActivity.java:
-- edge-to-edge
-```java
-EdgeToEdge.enable(this);
+🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
+- `android:enforceNavigationBarContrast`
+```xml
+<style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+    <item name="android:enforceNavigationBarContrast">false</item>
+</style>
 ```
-<img src="s11.png" width="20%">-><img src="s10.png" width="20%">
+<img src="s16.png" width="20%">-><img src="s17.png" width="20%">
 
-x->`EdgeToEdge.enable(this)`
+x->`<item name="android:enforceNavigationBarContrast">false</item>`
+
+🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/java/com/github/manabu_nakamura/editor/MainActivity.java:
 - edge-to-edge
 ```java
 EdgeToEdge.enable(this);
@@ -22,11 +22,16 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
     getWindow().setNavigationBarContrastEnforced(false);
 }
 ```
-<img src="s11.png" width="20%">-><img src="s10.png" width="20%">-><img src="s1.png" width="20%">
+<img src="s13.png" width="20%">-><img src="s14.png" width="20%">-><img src="s15.png" width="20%">
 
 x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(false)`
 
-https://issuetracker.google.com/issues/326356902
+https://issuetracker.google.com/issues/362137845
+
+> [!CAUTION]
+> The app <u>targeted Android 14</u> and <u>ran on Android 15</u> (Android Emulator).
+>
+> https://developer.android.com/about/versions/15/behavior-changes-15
 
 🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
 - `android:enforceNavigationBarContrast`
@@ -79,7 +84,32 @@ x->`<item name="android:navigationBarColor">@android:color/transparent</item>`
 
 https://github.com/material-components/material-components-android/blob/master/docs/components/BottomSheet.md#handling-insets-and-fullscreen
 
-- `android:windowLightNavigationBar` (Android 13)
+🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/java/com/github/manabu_nakamura/editor/MainActivity.java:
+- edge-to-edge
+```java
+EdgeToEdge.enable(this);
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+    getWindow().setNavigationBarContrastEnforced(false);
+}
+```
+<img src="s11.png" width="20%">-><img src="s10.png" width="20%">-><img src="s1.png" width="20%">
+
+x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(false)`
+
+https://issuetracker.google.com/issues/326356902
+
+> [!CAUTION]
+> The app <u>ran on Android 13</u> (Android Emulator).
+>
+> https://github.com/material-components/material-components-android/issues/4293
+>
+> https://issuetracker.google.com/issues/295296005
+>
+> https://developer.android.com/about/versions/15/behavior-changes-15
+
+🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
+
+- `android:windowLightNavigationBar`
 ```xml
 <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
     <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
