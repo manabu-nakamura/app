@@ -1,6 +1,6 @@
 > [!CAUTION]
-> The app <u>targeted Android 15</u> and <u>ran on Android 15</u> (Android Emulator).
->
+> The app <ins>targeted Android 15</ins> and <ins>ran on Android 15</ins> (Android Emulator).
+> <br>
 > https://developer.android.com/about/versions/15/behavior-changes-15
 
 🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
@@ -26,11 +26,11 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
 
 x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(false)`
 
-https://issuetracker.google.com/issues/362137845
+https://issuetracker.google.com/issues/362137845, https://issuetracker.google.com/issues/326356902
 
 > [!CAUTION]
-> The app <u>targeted Android 14</u> and <u>ran on Android 15</u> (Android Emulator).
->
+> The app <ins>targeted Android 14</ins> and <ins>ran on Android 15</ins> (Android Emulator).
+> <br>
 > https://developer.android.com/about/versions/15/behavior-changes-15
 
 🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
@@ -99,12 +99,10 @@ x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(fals
 https://issuetracker.google.com/issues/326356902
 
 > [!CAUTION]
-> The app <u>ran on Android 13</u> (Android Emulator).
->
-> https://github.com/material-components/material-components-android/issues/4293
->
-> https://issuetracker.google.com/issues/295296005
->
+> The app <ins>ran on Android 13</ins> (Android Emulator).
+> <br>
+> https://github.com/material-components/material-components-android/issues/4293,
+> https://issuetracker.google.com/issues/295296005,
 > https://developer.android.com/about/versions/15/behavior-changes-15
 
 🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
