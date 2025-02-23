@@ -21,8 +21,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
 }
 ```
 <img src="s13.png" width="20%">-><img src="s14.png" width="20%">-><img src="s15.png" width="20%">\
-x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(false)`
-
+x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(false)`\
 https://issuetracker.google.com/issues/362137845, https://issuetracker.google.com/issues/326356902
 
 > [!CAUTION]
@@ -73,8 +72,7 @@ x->`<item name="paddingBottomSystemWindowInsets">false</item>`
 </style>
 ```
 <img src="s7.png" width="20%">-><img src="s2.png" width="20%">\
-x->`<item name="android:navigationBarColor">@android:color/transparent</item>`
-
+x->`<item name="android:navigationBarColor">@android:color/transparent</item>`\
 https://github.com/material-components/material-components-android/blob/master/docs/components/BottomSheet.md#handling-insets-and-fullscreen
 
 🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/java/com/github/manabu_nakamura/editor/MainActivity.java:
@@ -86,8 +84,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
 }
 ```
 <img src="s11.png" width="20%">-><img src="s10.png" width="20%">-><img src="s1.png" width="20%">\
-x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(false)`
-
+x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(false)`\
 https://issuetracker.google.com/issues/326356902
 
 > [!CAUTION]
