@@ -65,6 +65,7 @@ x->`<item name="paddingBottomSystemWindowInsets">false</item>`
 ```xml
 <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
     <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
+    <item name="android:enforceNavigationBarContrast">false</item>
 </style>
 
 <style name="ThemeOverlay.App.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
