@@ -90,9 +90,27 @@ x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(fals
 https://issuetracker.google.com/issues/326356902
 
 > [!CAUTION]
-> The app ran on Android 13 (Android Emulator).\
-> https://github.com/material-components/material-components-android/issues/4293,
+> The app ran on Android 14 (Android Emulator).\
 > https://issuetracker.google.com/issues/295296005
+
+🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
+- `android:windowLightNavigationBar`
+```xml
+<style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+    <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
+    <item name="android:enforceNavigationBarContrast">false</item>
+</style>
+
+<style name="ThemeOverlay.App.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+    <item name="android:windowLightNavigationBar">?isLightTheme</item>
+</style>
+```
+<img src="s18.png" width="20%">-><img src="s19.png" width="20%">\
+x->`<item name="android:windowLightNavigationBar">?isLightTheme</item>`
+
+> [!CAUTION]
+> The app ran on Android 13 (Android Emulator).\
+> https://github.com/material-components/material-components-android/issues/4293
 
 🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
 - `android:windowLightNavigationBar`
