@@ -59,7 +59,8 @@ x->`<item name="android:enforceNavigationBarContrast">false</item>`
 </style>
 ```
 <img src="s6.png" width="20%">-><img src="s5.png" width="20%">\
-x->`<item name="paddingBottomSystemWindowInsets">false</item>`
+x->`<item name="paddingBottomSystemWindowInsets">false</item>`\
+https://github.com/material-components/material-components-android/issues/3173#issuecomment-1376719392
 
 - `android:navigationBarColor`
 ```xml
