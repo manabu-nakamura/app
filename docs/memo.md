@@ -3,7 +3,7 @@
 > https://developer.android.com/about/versions/15/behavior-changes-15
 
 🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
-- `android:enforceNavigationBarContrast`
+- [`android:enforceNavigationBarContrast`](https://developer.android.com/reference/android/R.attr#enforceNavigationBarContrast)
 ```xml
 <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
     <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
@@ -36,7 +36,7 @@ x->`<item name="android:enforceNavigationBarContrast">false</item>`
 x->`<item name="paddingBottomSystemWindowInsets">false</item>`\
 https://github.com/material-components/material-components-android/issues/3173
 
-- `android:navigationBarColor`
+- [`android:navigationBarColor`](https://developer.android.com/reference/android/R.attr#navigationBarColor)
 ```xml
 <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
     <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
@@ -51,7 +51,7 @@ https://github.com/material-components/material-components-android/issues/3173
 x->`<item name="android:navigationBarColor">@android:color/transparent</item>`\
 https://github.com/material-components/material-components-android/blob/master/docs/components/BottomSheet.md#handling-insets-and-fullscreen
 
-- `android:windowLightNavigationBar`
+- [`android:windowLightNavigationBar`](https://developer.android.com/reference/android/R.attr#windowLightNavigationBar)
 ```xml
 <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
     <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
@@ -79,6 +79,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
 ```
 <img src="s11.png" width="20%">-><img src="s10.png" width="20%">-><img src="s1.png" width="20%">\
 x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(false)`\
+https://developer.android.com/develop/ui/views/layout/edge-to-edge,
 https://issuetracker.google.com/issues/326356902
 
 > [!CAUTION]
@@ -105,6 +106,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
 ```
 <img src="s13.png" width="20%">-><img src="s14.png" width="20%">-><img src="s15.png" width="20%">\
 x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(false)`\
-https://issuetracker.google.com/issues/362137845, https://issuetracker.google.com/issues/326356902
+https://developer.android.com/develop/ui/views/layout/edge-to-edge,
+https://issuetracker.google.com/issues/326356902,
+https://issuetracker.google.com/issues/362137845
 
 [Manabu Nakamura](https://github.com/manabu-nakamura)
