@@ -112,7 +112,7 @@ https://issuetracker.google.com/issues/362137845
 <img src="s21.png" height="150"> (2)\
 <img src="s21.png" height="150"> (3) `<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>`
 
-- `android:enforceNavigationBarContrast`
+- [`android:enforceNavigationBarContrast`](https://developer.android.com/reference/android/R.attr#enforceNavigationBarContrast)
 ```xml
 <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
     <item name="android:enforceNavigationBarContrast">false</item>
