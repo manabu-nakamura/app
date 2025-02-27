@@ -3,6 +3,15 @@
 > https://developer.android.com/about/versions/15/behavior-changes-15
 
 🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
+- [`android:windowLayoutInDisplayCutoutMode`](https://developer.android.com/reference/android/R.attr#windowLayoutInDisplayCutoutMode)
+```xml
+<style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+    <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
+</style>
+```
+<img src="s20.png" height="20%">-><img src="s21.png" height="20%">\
+x->`<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>`
+
 - [`android:enforceNavigationBarContrast`](https://developer.android.com/reference/android/R.attr#enforceNavigationBarContrast)
 ```xml
 <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
@@ -87,6 +96,15 @@ https://issuetracker.google.com/issues/326356902
 > https://developer.android.com/about/versions/15/behavior-changes-15
 
 🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
+- [`android:windowLayoutInDisplayCutoutMode`](https://developer.android.com/reference/android/R.attr#windowLayoutInDisplayCutoutMode)
+```xml
+<style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+    <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
+</style>
+```
+<img src="s21.png" height="20%">-><img src="s21.png" height="20%">\
+x->`<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>`
+
 - `android:enforceNavigationBarContrast`
 ```xml
 <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
