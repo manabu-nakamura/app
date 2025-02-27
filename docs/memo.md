@@ -9,8 +9,8 @@
     <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
 </style>
 ```
-<img src="s20.png" height="150">-><img src="s21.png" height="150">\
-x->`<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>`
+<img src="s20.png" height="150"> x\
+<img src="s21.png" height="150"> `<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>`
 
 - [`android:enforceNavigationBarContrast`](https://developer.android.com/reference/android/R.attr#enforceNavigationBarContrast)
 ```xml
@@ -102,8 +102,8 @@ https://issuetracker.google.com/issues/326356902
     <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
 </style>
 ```
-<img src="s21.png" height="150">-><img src="s21.png" height="150">\
-x->`<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>`
+<img src="s21.png" height="150"> x\
+<img src="s21.png" height="150"> `<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>`
 
 - `android:enforceNavigationBarContrast`
 ```xml

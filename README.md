@@ -27,6 +27,6 @@
   - [App](https://github.com/manabu-nakamura/appc) 🟥
   - [Contributions](https://github.com/android/compose-samples/issues?q=author%3Amanabu-nakamura) 🟥
 
-<img src="docs/s1.png" width="20%"><img src="docs/s2.png" width="20%"><img src="docs/s3.png" width="20%"><img src="docs/s4.png" width="20%">
+<img src="docs/s1.png" width="150"><img src="docs/s2.png" width="150"><img src="docs/s3.png" width="150"><img src="docs/s4.png" width="150">
 
 [Manabu Nakamura](https://github.com/manabu-nakamura)
