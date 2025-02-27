@@ -9,7 +9,7 @@
     <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
 </style>
 ```
-<img src="s20.png" height="20%">-><img src="s21.png" height="20%">\
+<img src="s20.png" height="150">-><img src="s21.png" height="150">\
 x->`<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>`
 
 - [`android:enforceNavigationBarContrast`](https://developer.android.com/reference/android/R.attr#enforceNavigationBarContrast)
@@ -23,7 +23,7 @@ x->`<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</i
     <item name="android:navigationBarColor">@android:color/transparent</item>
 </style>
 ```
-<img src="s9.png" width="20%">-><img src="s2.png" width="20%">\
+<img src="s9.png" width="150">-><img src="s2.png" width="150">\
 x->`<item name="android:enforceNavigationBarContrast">false</item>`
 
 - `paddingBottomSystemWindowInsets`
@@ -41,7 +41,7 @@ x->`<item name="android:enforceNavigationBarContrast">false</item>`
     <item name="paddingBottomSystemWindowInsets">false</item>
 </style>
 ```
-<img src="s6.png" width="20%">-><img src="s5.png" width="20%">\
+<img src="s6.png" width="150">-><img src="s5.png" width="150">\
 x->`<item name="paddingBottomSystemWindowInsets">false</item>`\
 https://github.com/material-components/material-components-android/issues/3173
 
@@ -56,7 +56,7 @@ https://github.com/material-components/material-components-android/issues/3173
     <item name="android:navigationBarColor">@android:color/transparent</item>
 </style>
 ```
-<img src="s7.png" width="20%">-><img src="s2.png" width="20%">\
+<img src="s7.png" width="150">-><img src="s2.png" width="150">\
 x->`<item name="android:navigationBarColor">@android:color/transparent</item>`\
 https://github.com/material-components/material-components-android/blob/master/docs/components/BottomSheet.md#handling-insets-and-fullscreen
 
@@ -71,9 +71,9 @@ https://github.com/material-components/material-components-android/blob/master/d
     <item name="android:windowLightNavigationBar">?isLightTheme</item>
 </style>
 ```
-<img src="s2.png" width="20%">-><img src="s2.png" width="20%"> The app ran on Android 15 (Android Emulator).\
-<img src="s18.png" width="20%">-><img src="s19.png" width="20%"> The app ran on Android 14 (Android Emulator).\
-<img src="s8.png" width="20%">-><img src="s12.png" width="20%"> The app ran on Android 13 (Android Emulator).\
+<img src="s2.png" width="150">-><img src="s2.png" width="150"> The app ran on Android 15 (Android Emulator).\
+<img src="s18.png" width="150">-><img src="s19.png" width="150"> The app ran on Android 14 (Android Emulator).\
+<img src="s8.png" width="150">-><img src="s12.png" width="150"> The app ran on Android 13 (Android Emulator).\
 x->`<item name="android:windowLightNavigationBar">?isLightTheme</item>`\
 https://issuetracker.google.com/issues/295296005,
 https://github.com/material-components/material-components-android/issues/4293
@@ -86,7 +86,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
     getWindow().setNavigationBarContrastEnforced(false);
 }
 ```
-<img src="s11.png" width="20%">-><img src="s10.png" width="20%">-><img src="s1.png" width="20%">\
+<img src="s11.png" width="150">-><img src="s10.png" width="150">-><img src="s1.png" width="150">\
 x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(false)`\
 https://developer.android.com/develop/ui/views/layout/edge-to-edge,
 https://issuetracker.google.com/issues/326356902
@@ -102,7 +102,7 @@ https://issuetracker.google.com/issues/326356902
     <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
 </style>
 ```
-<img src="s21.png" height="20%">-><img src="s21.png" height="20%">\
+<img src="s21.png" height="150">-><img src="s21.png" height="150">\
 x->`<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>`
 
 - `android:enforceNavigationBarContrast`
@@ -111,7 +111,7 @@ x->`<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</i
     <item name="android:enforceNavigationBarContrast">false</item>
 </style>
 ```
-<img src="s16.png" width="20%">-><img src="s17.png" width="20%">\
+<img src="s16.png" width="150">-><img src="s17.png" width="150">\
 x->`<item name="android:enforceNavigationBarContrast">false</item>`
 
 🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/java/com/github/manabu_nakamura/editor/MainActivity.java:
@@ -122,7 +122,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
     getWindow().setNavigationBarContrastEnforced(false);
 }
 ```
-<img src="s13.png" width="20%">-><img src="s14.png" width="20%">-><img src="s15.png" width="20%">\
+<img src="s13.png" width="150">-><img src="s14.png" width="150">-><img src="s15.png" width="150">\
 x->`EdgeToEdge.enable(this)`->`getWindow().setNavigationBarContrastEnforced(false)`\
 https://developer.android.com/develop/ui/views/layout/edge-to-edge,
 https://issuetracker.google.com/issues/326356902,
