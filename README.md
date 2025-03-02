@@ -1,4 +1,6 @@
+App ([Material Components for Android](https://github.com/material-components/material-components-android))
 - [Material Components for Android](https://github.com/material-components/material-components-android)
+  - [Contributions](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura) 🟥
   - App
     - [editor](editor)
       - https://m3.material.io/
@@ -13,7 +15,7 @@
       - https://developer.android.com/training/basics/intents/result
       - https://developer.android.com/topic/libraries/architecture/viewmodel
       - https://developer.android.com/training/data-storage/shared-preferences
-    - [editork](editork) (kotlin editor)
+    - [editor (Kotlin)](editork)
     - [game](game)
     - [counter](counter)
       - https://developer.android.com/topic/libraries/architecture/livedata
@@ -22,10 +24,9 @@
       - add documentation
         - [memo](docs/memo.md)
       - add new apps
-  - [Contributions](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura) 🟥
 - [Jetpack Compose](https://developer.android.com/compose)
-  - [App](https://github.com/manabu-nakamura/appc) 🟥
   - [Contributions](https://github.com/android/compose-samples/issues?q=author%3Amanabu-nakamura) 🟥
+  - [App](https://github.com/manabu-nakamura/appc) 🟥
 
 <img src="docs/s1.png" width="150"><img src="docs/s2.png" width="150"><img src="docs/s3.png" width="150"><img src="docs/s4.png" width="150">
 
