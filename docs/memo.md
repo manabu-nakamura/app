@@ -109,7 +109,7 @@ https://issuetracker.google.com/issues/362137845
     <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
 </style>
 ```
-![](s21.png){: h="150" } (2)\
+![](s21.png){: height="150" } (2)\
 <img src="s21.png" height="150"> (2)\
 <img src="s21.png" height="150"> (3) `<item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>`
 
