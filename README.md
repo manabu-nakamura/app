@@ -1,8 +1,8 @@
 App ([Material Components for Android](https://github.com/material-components/material-components-android))
 - [Material Components for Android](https://github.com/material-components/material-components-android)
   - [Contributions](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura) 🟥
-  - App
-    - [editor](editor)
+  - App and [Memo](docs/memo.md) 🟥
+    - editor ([Java](editor) and [Kotlin](editork))
       - https://m3.material.io/
         - https://github.com/material-components/material-components-android
         - https://github.com/material-components/material-components-android/tree/master/docs
@@ -15,14 +15,12 @@ App ([Material Components for Android](https://github.com/material-components/ma
       - https://developer.android.com/training/basics/intents/result
       - https://developer.android.com/topic/libraries/architecture/viewmodel
       - https://developer.android.com/training/data-storage/shared-preferences
-    - [editor (Kotlin)](editork)
     - [game](game)
     - [counter](counter)
       - https://developer.android.com/topic/libraries/architecture/livedata
     - Plan
       - add comments
       - add documentation
-        - [memo](docs/memo.md)
       - add new apps
 - [Jetpack Compose](https://developer.android.com/compose)
   - [Contributions](https://github.com/android/compose-samples/issues?q=author%3Amanabu-nakamura) 🟥
