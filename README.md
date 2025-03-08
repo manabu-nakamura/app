@@ -28,6 +28,8 @@ App ([Material Components for Android](https://github.com/material-components/ma
   - [Contributions](https://github.com/android/compose-samples/issues?q=author%3Amanabu-nakamura) 🟥
   - [App](https://github.com/manabu-nakamura/appc) 🟥
 
-<img src="docs/s1.png" width="150"><img src="docs/s2.png" width="150"><img src="docs/s3.png" width="150"><img src="docs/s4.png" width="150">
+<img src="docs/s1.png" width="150"><img src="docs/s2.png" width="150">\
+<img src="docs/s22.png" width="150"><img src="docs/s23.png" width="150">\
+<img src="docs/s3.png" width="150"><img src="docs/s4.png" width="150">
 
 [Manabu Nakamura](https://github.com/manabu-nakamura)
