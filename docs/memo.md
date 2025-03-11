@@ -2,7 +2,7 @@
 > The app targeted Android 14 and ran on Android 15 (Android Emulator).\
 > https://developer.android.com/about/versions/15/behavior-changes-15
 
-🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/java/com/github/manabu_nakamura/editor/MainActivity.java:
+🟥https://github.com/manabu-nakamura/app/blob/main/editor/src/main/java/com/github/manabu_nakamura/editor/MainActivity.java:
 - edge-to-edge
 ```java
 EdgeToEdge.enable(this);
@@ -15,7 +15,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
 https://developer.android.com/develop/ui/views/layout/edge-to-edge,
 https://issuetracker.google.com/issues/326356902
 
-🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
+🟥https://github.com/manabu-nakamura/app/blob/main/editor/src/main/res/values/themes.xml:
 - [`android:windowLayoutInDisplayCutoutMode`](https://developer.android.com/reference/android/R.attr#windowLayoutInDisplayCutoutMode)
 ```xml
 <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
@@ -40,7 +40,7 @@ https://issuetracker.google.com/issues/326356902
 ```
 <img src="s7.png" width="150">-><img src="s9.png" width="150">-><img src="s2.png" width="150">\
 (3) -> (4) `<item name="android:navigationBarColor">@android:color/transparent</item>` -> (5) `<item name="android:enforceNavigationBarContrast">false</item>`\
-https://github.com/material-components/material-components-android/blob/master/docs/components/BottomSheet.md#handling-insets-and-fullscreen
+https://github.com/material-components/material-components-android/blob/main/docs/components/BottomSheet.md#handling-insets-and-fullscreen
 
 - [`android:windowLightNavigationBar`](https://developer.android.com/reference/android/R.attr#windowLightNavigationBar)
 ```xml
@@ -88,7 +88,7 @@ https://github.com/material-components/material-components-android/issues/3173
 > The app targeted Android 15 and ran on Android 15 (Android Emulator).\
 > https://developer.android.com/about/versions/15/behavior-changes-15
 
-🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/java/com/github/manabu_nakamura/editor/MainActivity.java:
+🟥https://github.com/manabu-nakamura/app/blob/main/editor/src/main/java/com/github/manabu_nakamura/editor/MainActivity.java:
 - edge-to-edge
 ```java
 EdgeToEdge.enable(this);
@@ -102,7 +102,7 @@ https://developer.android.com/develop/ui/views/layout/edge-to-edge,
 https://issuetracker.google.com/issues/326356902,
 https://issuetracker.google.com/issues/362137845
 
-🟥https://github.com/manabu-nakamura/app/blob/master/editor/src/main/res/values/themes.xml:
+🟥https://github.com/manabu-nakamura/app/blob/main/editor/src/main/res/values/themes.xml:
 - [`android:windowLayoutInDisplayCutoutMode`](https://developer.android.com/reference/android/R.attr#windowLayoutInDisplayCutoutMode)
 ```xml
 <style name="Theme.App" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
