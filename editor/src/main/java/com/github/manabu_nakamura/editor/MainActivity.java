@@ -25,7 +25,6 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.text.method.LinkMovementMethod;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -49,6 +48,7 @@ import com.github.manabu_nakamura.editor.databinding.SheetBinding;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.google.android.material.color.DynamicColors;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.io.BufferedReader;
@@ -66,13 +66,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         AppCompatDelegate.setDefaultNightMode(THEMES[PreferenceManager.getDefaultSharedPreferences(this).getInt("theme", 2)]);
         super.onCreate(savedInstanceState);
+        DynamicColors.applyToActivityIfAvailable(this);
         EdgeToEdge.enable(this);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             getWindow().setNavigationBarContrastEnforced(false);
         }
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        setSupportActionBar(binding.appBar);
         viewModel2 = new ViewModelProvider(this).get(ViewModel2.class);
         binding.editText.requestFocus();
     }
@@ -96,10 +96,16 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(@NonNull Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+    public void undo(View view) {
+        binding.editText.onTextContextMenuItem(android.R.id.undo);
+    }
+
+    public void redo(View view) {
+        binding.editText.onTextContextMenuItem(android.R.id.redo);
+    }
+
+    public void paste(View view) {
+        binding.editText.onTextContextMenuItem(android.R.id.paste);
     }
 
     public void menu(View view) {
@@ -145,18 +151,6 @@ public class MainActivity extends AppCompatActivity {
     public void about(MenuItem menuItem) {
         new DialogFragment3().show(getSupportFragmentManager(), "");
         bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
-    }
-
-    public void undo(MenuItem menuItem) {
-        binding.editText.onTextContextMenuItem(android.R.id.undo);
-    }
-
-    public void redo(MenuItem menuItem) {
-        binding.editText.onTextContextMenuItem(android.R.id.redo);
-    }
-
-    public void paste(MenuItem menuItem) {
-        binding.editText.onTextContextMenuItem(android.R.id.paste);
     }
 
     private void newFile() {

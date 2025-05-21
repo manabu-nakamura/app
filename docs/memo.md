@@ -1,3 +1,9 @@
+## (temporary) [Material 3 Expressive](https://m3.material.io/blog/building-with-m3-expressive) ([docked toolbar](https://m3.material.io/components/toolbars))
+
+<img src="m3e.png" width="150">
+
+## Material 3 ([bottom app bar](https://m3.material.io/components/toolbars))
+
 > [!CAUTION]
 > The app targeted Android 14 and ran on Android 15 (Android Emulator).\
 > https://developer.android.com/about/versions/15/behavior-changes-15
