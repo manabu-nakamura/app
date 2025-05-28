@@ -1,4 +1,4 @@
-## (temporary) [Material 3 Expressive](https://m3.material.io/blog/building-with-m3-expressive) ([docked toolbar](https://m3.material.io/components/toolbars))
+## [Material 3 Expressive](https://m3.material.io/blog/building-with-m3-expressive) ([docked toolbar](https://m3.material.io/components/toolbars))
 
 <img src="m3e.png" width="150">
 
