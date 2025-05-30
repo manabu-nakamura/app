@@ -24,7 +24,7 @@ App ([Material Components for Android](https://github.com/material-components/ma
       - add new apps
 - [Jetpack Compose](https://developer.android.com/compose)
   - [Contributions](https://github.com/android/compose-samples/issues?q=author%3Amanabu-nakamura) 🟥
-  - [App](https://github.com/manabu-nakamura/appc) and [Memo](https://github.com/manabu-nakamura/appc/blob/main/docs/memo.md) 🟥
+  - [App](../appc) and [Memo](../appc/docs/memo.md) 🟥
 
 <img src="docs/m3e.png" width="150">\
 <img src="docs/s1.png" width="150"><img src="docs/s2.png" width="150">\
