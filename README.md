@@ -4,6 +4,7 @@ App ([Material Components for Android](https://github.com/material-components/ma
   - App and [Memo](docs/memo.md) 🟥
     - editor ([Java](editor) and [Kotlin](editork))
       - https://m3.material.io/
+        - https://m3.material.io/blog/building-with-m3-expressive
         - https://github.com/material-components/material-components-android
         - https://github.com/material-components/material-components-android/tree/master/docs
       - https://developer.android.com/develop/ui/views/theming/dynamic-colors

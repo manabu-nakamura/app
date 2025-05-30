@@ -1,6 +1,6 @@
 ## [Material 3 Expressive](https://m3.material.io/blog/building-with-m3-expressive) ([docked toolbar](https://m3.material.io/components/toolbars))
 
-[editor](../editor) is expressive.
+[editor](../editor) uses the vibrant color style.
 
 <img src="m3e.png" width="150">
 
