@@ -51,7 +51,7 @@
                 app:layout_overflowText="@string/undo"
                 app:layout_overflowIcon="@drawable/outline_undo_24">
                 <Button
-                    style="?attr/materialIconButtonStyle"
+                    style="?materialIconButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -69,7 +69,7 @@
                 app:layout_overflowText="@string/redo"
                 app:layout_overflowIcon="@drawable/outline_redo_24">
                 <Button
-                    style="?attr/materialIconButtonStyle"
+                    style="?materialIconButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -87,7 +87,7 @@
                 app:layout_overflowText="@string/paste"
                 app:layout_overflowIcon="@drawable/outline_content_paste_24">
                 <Button
-                    style="?attr/materialIconButtonStyle"
+                    style="?materialIconButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -105,7 +105,7 @@
                 app:layout_overflowText="@string/menu"
                 app:layout_overflowIcon="@drawable/outline_menu_24">
                 <Button
-                    style="?attr/materialIconButtonFilledStyle"
+                    style="?materialIconButtonFilledStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
