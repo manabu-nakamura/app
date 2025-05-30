@@ -1,5 +1,7 @@
 ## [Material 3 Expressive](https://m3.material.io/blog/building-with-m3-expressive) ([docked toolbar](https://m3.material.io/components/toolbars))
 
+[editor](../editor) is expressive.
+
 <img src="m3e.png" width="150">
 
 ## Material 3 ([bottom app bar](https://m3.material.io/components/toolbars))
