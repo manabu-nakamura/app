@@ -1,6 +1,6 @@
 ## [Material 3 Expressive](https://m3.material.io/blog/building-with-m3-expressive) ([docked toolbar](https://github.com/material-components/material-components-android/blob/master/docs/components/DockedToolbar.md))
 
-[editor](../editor) uses the vibrant color style.
+[editor](../editor) uses the vibrant style.
 
 <img src="m3e.png" width="150">
 
