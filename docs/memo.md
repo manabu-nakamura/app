@@ -1,10 +1,10 @@
-## [Material 3 Expressive](https://m3.material.io/blog/building-with-m3-expressive) ([docked toolbar](https://m3.material.io/components/toolbars))
+## [Material 3 Expressive](https://m3.material.io/blog/building-with-m3-expressive) ([docked toolbar](https://github.com/material-components/material-components-android/blob/master/docs/components/DockedToolbar.md))
 
 [editor](../editor) uses the vibrant color style.
 
 <img src="m3e.png" width="150">
 
-## Material 3 ([bottom app bar](https://m3.material.io/components/toolbars))
+## Material 3 ([bottom app bar](https://github.com/material-components/material-components-android/blob/master/docs/components/BottomAppBar.md))
 
 > [!CAUTION]
 > The app targeted Android 14 and ran on Android 15 (Android Emulator).\
