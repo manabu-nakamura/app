@@ -22,7 +22,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="65dp"
         android:fillViewport="true">
         <EditText
             android:id="@+id/editText"
@@ -33,18 +33,91 @@
             android:paddingHorizontal="5dp"
             android:inputType="textMultiLine|textNoSuggestions" />
     </ScrollView>
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/appBar"
+    <com.google.android.material.dockedtoolbar.DockedToolbarLayout
+        style="?dockedToolbarVibrantStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:fitsSystemWindows="true" />
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
+        android:layout_gravity="bottom">
+        <com.google.android.material.overflow.OverflowLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:focusable="false"
+                android:layout_weight="1"
+                android:onClick="undo"
+                app:layout_overflowText="@string/undo"
+                app:layout_overflowIcon="@drawable/outline_undo_24">
+                <Button
+                    style="?materialIconButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:tooltipText="@string/undo"
+                    android:onClick="undo"
+                    app:icon="@drawable/outline_undo_24" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:focusable="false"
+                android:layout_weight="1"
+                android:onClick="redo"
+                app:layout_overflowText="@string/redo"
+                app:layout_overflowIcon="@drawable/outline_redo_24">
+                <Button
+                    style="?materialIconButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:tooltipText="@string/redo"
+                    android:onClick="redo"
+                    app:icon="@drawable/outline_redo_24" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:focusable="false"
+                android:layout_weight="1"
+                android:onClick="paste"
+                app:layout_overflowText="@string/paste"
+                app:layout_overflowIcon="@drawable/outline_content_paste_24">
+                <Button
+                    style="?materialIconButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:tooltipText="@string/paste"
+                    android:onClick="paste"
+                    app:icon="@drawable/outline_content_paste_24" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:focusable="false"
+                android:layout_weight="1"
+                android:onClick="menu"
+                app:layout_overflowText="@string/menu"
+                app:layout_overflowIcon="@drawable/outline_menu_24">
+                <Button
+                    style="?materialIconButtonFilledStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:tooltipText="@string/menu"
+                    android:onClick="menu"
+                    app:icon="@drawable/outline_menu_24" />
+            </FrameLayout>
+        </com.google.android.material.overflow.OverflowLinearLayout>
+    </com.google.android.material.dockedtoolbar.DockedToolbarLayout>
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/outline_menu_24"
-        android:tooltipText="@string/menu"
-        android:onClick="menu"
-        app:layout_anchor="@id/appBar" />
+        android:visibility="gone" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
