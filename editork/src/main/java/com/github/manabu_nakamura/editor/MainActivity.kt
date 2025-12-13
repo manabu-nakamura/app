@@ -194,7 +194,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun save2(todo: ViewModel2.TODO) {
         try {
-            BufferedWriter(OutputStreamWriter(contentResolver.openOutputStream(viewModel2.uri!!))).use {
+            BufferedWriter(OutputStreamWriter(contentResolver.openOutputStream(viewModel2.uri!!, "wt"))).use {
                 it.write(binding.editText.text.toString())
                 viewModel2.modified = false
                 when (todo) {

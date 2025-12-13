@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void save2(ViewModel2.TODO todo) {
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(getContentResolver().openOutputStream(viewModel2.uri)))) {
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(getContentResolver().openOutputStream(viewModel2.uri, "wt")))) {
             bufferedWriter.write(binding.editText.getText().toString());
             viewModel2.modified = false;
             if (todo == ViewModel2.TODO.NEW_FILE) {
