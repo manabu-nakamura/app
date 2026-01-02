@@ -1,6 +1,7 @@
 App ([Material Components for Android](https://github.com/material-components/material-components-android))
 - [Material Components for Android](https://github.com/material-components/material-components-android)
-  - [Contributions](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura) 🟥
+  - [Contributions](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura) ([PRs are not directly merged into the repository](https://github.com/material-components/material-components-android/blob/master/docs/contributing.md#pull-request-process)) 🟥
+    - [Commits](https://github.com/material-components/material-components-android/commits?author=manabu-nakamura) 🟥
   - App and [Memo](docs/memo.md) 🟥
     - editor ([Java](editor) and [Kotlin](editork))
       - https://m3.material.io/
