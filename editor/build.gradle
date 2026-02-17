@@ -1,11 +1,15 @@
-apply plugin: 'com.android.application'
+plugins {
+    alias(libs.plugins.android.application)
+}
 
 android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_21
         targetCompatibility JavaVersion.VERSION_21
     }
-    compileSdk 36
+    compileSdk {
+        version = release(36)
+    }
     defaultConfig {
         applicationId 'com.github.manabu_nakamura.editor'
         minSdk 23
@@ -20,7 +24,7 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.documentfile:documentfile:1.1.0'
-    implementation 'androidx.preference:preference:1.2.1'
+    implementation libs.documentfile
+    implementation libs.preference
     implementation 'com.google.android.material:material:1.14.0-alpha09'
 }
