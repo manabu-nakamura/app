@@ -1,7 +1,4 @@
-App ([Material Components for Android](https://github.com/material-components/material-components-android))
 - [Material Components for Android](https://github.com/material-components/material-components-android)
-  - [Pull Requests](https://github.com/material-components/material-components-android/pulls?q=author%3Amanabu-nakamura) ([PRs are not directly merged into the repository](https://github.com/material-components/material-components-android/blob/master/docs/contributing.md#pull-request-process)) 🟥
-  - [Commits](https://github.com/material-components/material-components-android/commits?author=manabu-nakamura) 🟥
   - App and [Memo](docs/memo.md) 🟥
     - editor ([Java](editor) and [Kotlin](editork))
       - https://m3.material.io/
@@ -24,9 +21,11 @@ App ([Material Components for Android](https://github.com/material-components/ma
       - add comments
       - add documentation
       - add new apps
+  - [Merged Commits](https://github.com/material-components/material-components-android/commits?author=manabu-nakamura) 🟥
+  - [Pull Requests](https://github.com/material-components/material-components-android/pulls?q=author%3Amanabu-nakamura) ([PRs are not directly merged into the repository](https://github.com/material-components/material-components-android/blob/master/docs/contributing.md#pull-request-process)) 🟥
 - [Jetpack Compose](https://developer.android.com/compose)
-  - [Pull Requests](https://github.com/android/compose-samples/pulls?q=author%3Amanabu-nakamura) 🟥
   - [App](https://github.com/manabu-nakamura/appc) and [Memo](https://github.com/manabu-nakamura/appc/blob/main/docs/memo.md) 🟥
+  - [Pull Requests](https://github.com/android/compose-samples/pulls?q=author%3Amanabu-nakamura) 🟥
 
 <img src="docs/s1.png" width="150"><img src="docs/s2.png" width="150">\
 <img src="docs/s22.png" width="150"><img src="docs/s23.png" width="150">\
