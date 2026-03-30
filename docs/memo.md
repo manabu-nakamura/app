@@ -22,7 +22,7 @@ https://issuetracker.google.com/issues/326356902
 🟥https://github.com/manabu-nakamura/app/blob/main/editor/src/main/res/values/themes.xml:
 - [`android:windowLayoutInDisplayCutoutMode`](https://developer.android.com/reference/android/R.attr#windowLayoutInDisplayCutoutMode)
 ```xml
-<style name="Theme.App" parent="Theme.Material3Expressive.DayNight.NoActionBar">
+<style name="Theme.App" parent="Theme.Material3Expressive.DynamicColors.DayNight.NoActionBar">
     <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
 </style>
 ```
@@ -32,7 +32,7 @@ https://issuetracker.google.com/issues/326356902
 - [`android:navigationBarColor`](https://developer.android.com/reference/android/R.attr#navigationBarColor),
 [`android:enforceNavigationBarContrast`](https://developer.android.com/reference/android/R.attr#enforceNavigationBarContrast)
 ```xml
-<style name="Theme.App" parent="Theme.Material3Expressive.DayNight.NoActionBar">
+<style name="Theme.App" parent="Theme.Material3Expressive.DynamicColors.DayNight.NoActionBar">
     <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
     <item name="android:enforceNavigationBarContrast">false</item>
     <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
@@ -48,7 +48,7 @@ https://github.com/material-components/material-components-android/blob/main/doc
 
 - [`android:windowLightNavigationBar`](https://developer.android.com/reference/android/R.attr#windowLightNavigationBar)
 ```xml
-<style name="Theme.App" parent="Theme.Material3Expressive.DayNight.NoActionBar">
+<style name="Theme.App" parent="Theme.Material3Expressive.DynamicColors.DayNight.NoActionBar">
     <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
     <item name="android:enforceNavigationBarContrast">false</item>
     <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
@@ -68,7 +68,7 @@ https://github.com/material-components/material-components-android/issues/4293
 
 - `paddingBottomSystemWindowInsets`
 ```xml
-<style name="Theme.App" parent="Theme.Material3Expressive.DayNight.NoActionBar">
+<style name="Theme.App" parent="Theme.Material3Expressive.DynamicColors.DayNight.NoActionBar">
     <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
     <item name="android:enforceNavigationBarContrast">false</item>
     <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
@@ -109,7 +109,7 @@ https://issuetracker.google.com/issues/362137845
 🟥https://github.com/manabu-nakamura/app/blob/main/editor/src/main/res/values/themes.xml:
 - [`android:windowLayoutInDisplayCutoutMode`](https://developer.android.com/reference/android/R.attr#windowLayoutInDisplayCutoutMode)
 ```xml
-<style name="Theme.App" parent="Theme.Material3Expressive.DayNight.NoActionBar">
+<style name="Theme.App" parent="Theme.Material3Expressive.DynamicColors.DayNight.NoActionBar">
     <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
 </style>
 ```
@@ -118,7 +118,7 @@ https://issuetracker.google.com/issues/362137845
 
 - [`android:enforceNavigationBarContrast`](https://developer.android.com/reference/android/R.attr#enforceNavigationBarContrast)
 ```xml
-<style name="Theme.App" parent="Theme.Material3Expressive.DayNight.NoActionBar">
+<style name="Theme.App" parent="Theme.Material3Expressive.DynamicColors.DayNight.NoActionBar">
     <item name="android:enforceNavigationBarContrast">false</item>
     <item name="android:windowLayoutInDisplayCutoutMode">shortEdges or always</item>
 </style>
