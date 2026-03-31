@@ -309,12 +309,9 @@ public class MainActivity extends AppCompatActivity {
         private TODO todo = TODO.NOTHING;
 
         public String getFilename(Context context) {
-            DocumentFile documentFile = DocumentFile.fromSingleUri(context, uri);
-            if (documentFile != null) {
-                String filename = documentFile.getName();
-                if (filename != null) {
-                    return filename;
-                }
+            String filename = DocumentFile.fromSingleUri(context, uri).getName();
+            if (filename != null) {
+                return filename;
             }
             uri = null;
             return context.getString(R.string.untitled);
