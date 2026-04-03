@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity() {
     private companion object {
         private val THEMES = intArrayOf(AppCompatDelegate.MODE_NIGHT_NO, AppCompatDelegate.MODE_NIGHT_YES, AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
     }
+    enum class TODO { NOTHING, NEW_FILE, OPEN }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(THEMES[PreferenceManager.getDefaultSharedPreferences(this).getInt("theme", 2)])
@@ -120,12 +121,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun save(menuItem: MenuItem) {
-        save(ViewModel2.TODO.NOTHING)
+        save(TODO.NOTHING)
         bottomSheetBehavior?.state = BottomSheetBehavior.STATE_HIDDEN
     }
 
     fun saveAs(menuItem: MenuItem) {
-        saveAs(ViewModel2.TODO.NOTHING)
+        saveAs(TODO.NOTHING)
         bottomSheetBehavior?.state = BottomSheetBehavior.STATE_HIDDEN
     }
 
@@ -184,7 +185,7 @@ class MainActivity : AppCompatActivity() {
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
     }
 
-    private fun save(todo: ViewModel2.TODO) {
+    private fun save(todo: TODO) {
         viewModel2.uri?.run {
             if (viewModel2.modified) {
                 save2(todo)
@@ -192,14 +193,14 @@ class MainActivity : AppCompatActivity() {
         } ?: saveAs(todo)
     }
 
-    private fun save2(todo: ViewModel2.TODO) {
+    private fun save2(todo: TODO) {
         try {
             BufferedWriter(OutputStreamWriter(contentResolver.openOutputStream(viewModel2.uri!!, "wt"))).use {
                 it.write(binding.editText.text.toString())
                 viewModel2.modified = false
                 when (todo) {
-                    ViewModel2.TODO.NEW_FILE -> newFile()
-                    ViewModel2.TODO.OPEN -> open()
+                    TODO.NEW_FILE -> newFile()
+                    TODO.OPEN -> open()
                     else -> {}
                 }
             }
@@ -216,7 +217,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun saveAs(todo: ViewModel2.TODO) {
+    private fun saveAs(todo: TODO) {
         viewModel2.todo = todo
         activityResultLauncher1.launch("")
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
@@ -228,7 +229,7 @@ class MainActivity : AppCompatActivity() {
             return MaterialAlertDialogBuilder(mainActivity)
                 .setTitle(mainActivity.viewModel2.getFilename(mainActivity))
                 .setMessage(R.string.message)
-                .setPositiveButton(R.string.save0) { _, _ -> mainActivity.save(ViewModel2.TODO.NEW_FILE) }
+                .setPositiveButton(R.string.save0) { _, _ -> mainActivity.save(TODO.NEW_FILE) }
                 .setNegativeButton(R.string.notSave0) { _, _ -> mainActivity.newFile() }
                 .setNeutralButton(R.string.cancel, null)
                 .create()
@@ -241,7 +242,7 @@ class MainActivity : AppCompatActivity() {
             return MaterialAlertDialogBuilder(mainActivity)
                 .setTitle(mainActivity.viewModel2.getFilename(mainActivity))
                 .setMessage(R.string.message)
-                .setPositiveButton(R.string.save1) { _, _ -> mainActivity.save(ViewModel2.TODO.OPEN) }
+                .setPositiveButton(R.string.save1) { _, _ -> mainActivity.save(TODO.OPEN) }
                 .setNegativeButton(R.string.notSave1) { _, _ -> mainActivity.open() }
                 .setNeutralButton(R.string.cancel, null)
                 .create()
@@ -294,7 +295,7 @@ class MainActivity : AppCompatActivity() {
     class ViewModel2 : ViewModel() {
         var uri: Uri? = null
         var modified = false
-        enum class TODO { NOTHING, NEW_FILE, OPEN }
+//        enum class TODO { NOTHING, NEW_FILE, OPEN }
         var todo = TODO.NOTHING
 
         fun getFilename(context: Context): String {
