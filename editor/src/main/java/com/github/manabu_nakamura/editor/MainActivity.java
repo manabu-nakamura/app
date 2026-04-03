@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     private BottomSheetBehavior<?> bottomSheetBehavior;
     private ViewModel2 viewModel2;
     private static final int[] THEMES = {AppCompatDelegate.MODE_NIGHT_NO, AppCompatDelegate.MODE_NIGHT_YES, AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM};
+    private enum TODO {NOTHING, NEW_FILE, OPEN}
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -134,12 +135,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void save(MenuItem menuItem) {
-        save(ViewModel2.TODO.NOTHING);
+        save(TODO.NOTHING);
         bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
     }
 
     public void saveAs(MenuItem menuItem) {
-        saveAs(ViewModel2.TODO.NOTHING);
+        saveAs(TODO.NOTHING);
         bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
     }
 
@@ -184,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
 
-    private void save(ViewModel2.TODO todo) {
+    private void save(TODO todo) {
         if (viewModel2.uri == null) {
             saveAs(todo);
         } else if (viewModel2.modified) {
@@ -192,13 +193,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void save2(ViewModel2.TODO todo) {
+    private void save2(TODO todo) {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(getContentResolver().openOutputStream(viewModel2.uri, "wt")))) {
             bufferedWriter.write(binding.editText.getText().toString());
             viewModel2.modified = false;
-            if (todo == ViewModel2.TODO.NEW_FILE) {
+            if (todo == TODO.NEW_FILE) {
                 newFile();
-            } else if (todo == ViewModel2.TODO.OPEN) {
+            } else if (todo == TODO.OPEN) {
                 open();
             }
         } catch (Exception e) {
@@ -214,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
         }
     });
 
-    private void saveAs(ViewModel2.TODO todo) {
+    private void saveAs(TODO todo) {
         viewModel2.todo = todo;
         activityResultLauncher1.launch("");
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
@@ -228,7 +229,7 @@ public class MainActivity extends AppCompatActivity {
             return new MaterialAlertDialogBuilder(mainActivity)
                     .setTitle(mainActivity.viewModel2.getFilename(mainActivity))
                     .setMessage(R.string.message)
-                    .setPositiveButton(R.string.save0, (dialog, which) -> mainActivity.save(ViewModel2.TODO.NEW_FILE))
+                    .setPositiveButton(R.string.save0, (dialog, which) -> mainActivity.save(TODO.NEW_FILE))
                     .setNegativeButton(R.string.notSave0, (dialog, which) -> mainActivity.newFile())
                     .setNeutralButton(R.string.cancel, null)
                     .create();
@@ -243,7 +244,7 @@ public class MainActivity extends AppCompatActivity {
             return new MaterialAlertDialogBuilder(mainActivity)
                     .setTitle(mainActivity.viewModel2.getFilename(mainActivity))
                     .setMessage(R.string.message)
-                    .setPositiveButton(R.string.save1, (dialog, which) -> mainActivity.save(ViewModel2.TODO.OPEN))
+                    .setPositiveButton(R.string.save1, (dialog, which) -> mainActivity.save(TODO.OPEN))
                     .setNegativeButton(R.string.notSave1, (dialog, which) -> mainActivity.open())
                     .setNeutralButton(R.string.cancel, null)
                     .create();
@@ -305,7 +306,7 @@ public class MainActivity extends AppCompatActivity {
     public static class ViewModel2 extends ViewModel {
         private Uri uri = null;
         private boolean modified = false;
-        private enum TODO {NOTHING, NEW_FILE, OPEN}
+//        private enum TODO {NOTHING, NEW_FILE, OPEN}
         private TODO todo = TODO.NOTHING;
 
         public String getFilename(Context context) {
