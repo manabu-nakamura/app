@@ -26,5 +26,5 @@ android {
 dependencies {
     implementation libs.documentfile
     implementation libs.preference
-    implementation 'com.google.android.material:material:1.14.0-alpha10'
+    implementation libs.material
 }
