@@ -11,7 +11,7 @@ android {
         version = release(36)
     }
     defaultConfig {
-        applicationId 'com.github.manabu_nakamura.editor'
+        applicationId 'com.github.manabu_nakamura.editork'
         minSdk 23
         targetSdk 36
         versionCode 1
