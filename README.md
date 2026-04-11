@@ -3,7 +3,7 @@
     - editor ([Java](editor) and [Kotlin](editork))
       - https://m3.material.io/
         - https://m3.material.io/blog/building-with-m3-expressive
-        - https://github.com/material-components/material-components-android
+      - https://github.com/material-components/material-components-android
         - https://github.com/material-components/material-components-android/tree/master/docs
       - https://developer.android.com/develop/ui/views/theming/dynamic-colors
       - https://developer.android.com/develop/ui/views/theming/darktheme
@@ -23,12 +23,13 @@
       - add new apps
   - [Merged Commits](https://github.com/material-components/material-components-android/commits?author=manabu-nakamura) 🟥
   - [Pull Requests](https://github.com/material-components/material-components-android/issues?q=author%3Amanabu-nakamura%20OR%20commenter%3Amanabu-nakamura) ([PRs are not directly merged into the repository](https://github.com/material-components/material-components-android/blob/master/docs/contributing.md#pull-request-process)) 🟥
-- [Jetpack Compose](https://developer.android.com/compose)
-  - [App](https://github.com/manabu-nakamura/appc) and [Memo](https://github.com/manabu-nakamura/appc/blob/main/docs/memo.md) 🟥
-  - [Pull Requests](https://github.com/android/compose-samples/issues?q=author%3Amanabu-nakamura%20OR%20commenter%3Amanabu-nakamura) 🟥
 
 <img src="docs/s1.png" width="150"><img src="docs/s2.png" width="150">\
 <img src="docs/s22.png" width="150"><img src="docs/s23.png" width="150">\
 <img src="docs/s3.png" width="150"><img src="docs/s4.png" width="150">
+
+- [Jetpack Compose](https://developer.android.com/compose)
+  - [App](https://github.com/manabu-nakamura/appc) and [Memo](https://github.com/manabu-nakamura/appc/blob/main/docs/memo.md) 🟥
+  - [Pull Requests](https://github.com/android/compose-samples/issues?q=author%3Amanabu-nakamura%20OR%20commenter%3Amanabu-nakamura) 🟥
 
 [Manabu Nakamura](https://github.com/manabu-nakamura)
