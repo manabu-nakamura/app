@@ -8,12 +8,12 @@ android {
         targetCompatibility JavaVersion.VERSION_21
     }
     compileSdk {
-        version = release(36)
+        version = release(37)
     }
     defaultConfig {
         applicationId 'com.github.manabu_nakamura.editor'
         minSdk 23
-        targetSdk 36
+        targetSdk 37
         versionCode 1
         versionName "1.0"
     }
