@@ -1,7 +1,7 @@
 [versions]
 agp = "9.2.1"
 documentfile = "1.1.0"
-material = "1.14.0-rc01"
+material = "1.14.0"
 preference = "1.2.1"
 
 [libraries]
